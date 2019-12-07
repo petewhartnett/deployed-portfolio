@@ -13,8 +13,8 @@ app.get('/Portfolio', function(request,response){
 console.log('route portfiolio works');
 response.send('this is the response');
 });
-
-app.listen(3000, function(){
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, function(){
 console.log('starting!');
 
 });
